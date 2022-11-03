@@ -30,7 +30,7 @@ form input {
   justify-content: flex-start;
   margin-bottom: 10px;
 }
-form button {
+button {
   margin-top: 20px;
   margin-bottom: 100px;
   background-color: #574dcc;
@@ -40,6 +40,37 @@ form button {
   height: 40px;
   border-radius: 5px;
 }
+.stepTwo-style {
+  width: 250px;
+  background-color: #f2f2f2;
+  padding: 25px 25px 25px 15px;
+  display: flex;
+  border-radius: 5px;
+}
+
+.stepTwo-style .title {
+  display: flex;
+  justify-content: left;
+  line-height: 30px;
+}
+.editBtn {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  background-color: #574dcc;
+
+  height: 40px;
+  border-radius: 5px;
+}
+.editBtn p {
+  color: white;
+  font-size: 14px;
+}
+
 footer {
   margin: auto;
   font-size: 16px;
