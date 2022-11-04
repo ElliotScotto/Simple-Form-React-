@@ -5,9 +5,9 @@ const StepTwo = (props) => {
     <>
       <header>Results</header>
       <form className="stepTwo-style">
-        <div className="title">Name : {props.setName}</div>
-        <div className="title">Email : {props.setEmail}</div>
-        <div className="title">Password : {props.setPassword}</div>
+        <div className="title">Name : {props.name}</div>
+        <div className="title">Email : {props.email}</div>
+        <div className="title">Password : {props.password}</div>
       </form>
       <div
         className="editBtn"

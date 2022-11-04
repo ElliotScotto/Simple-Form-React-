@@ -13,7 +13,7 @@ function App() {
     <>
       <main>
         {isValid ? (
-          <StepTwo />
+          <StepTwo name={name} email={email} password={password} />
         ) : (
           <>
             <header>Create account</header>
@@ -23,22 +23,30 @@ function App() {
                 if (password !== confirmPassword) {
                   alert("Vos 2 mots de passe ne sont pas identiques");
                 } else {
-                  // afficher stepTwo
+                  // affiche stepTwo
                   setIsValid(true);
                 }
               }}
             >
               <span className="title">Name</span>
               <input
+                value={name}
                 type="text"
                 name="name"
                 placeholder="Elliot Scotto"
+                onChange={(evntmail) => {
+                  setName(evntmail.target.value);
+                }}
               ></input>
               <span className="title">Email</span>
               <input
+                value={email}
                 type="email"
                 name="email"
                 placeholder="elliot.scotto@gmail.com"
+                onChange={(evntmail) => {
+                  setEmail(evntmail.target.value);
+                }}
               ></input>
               <span className="title">Password</span>
               <input
